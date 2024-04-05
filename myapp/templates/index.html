@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哲學簡介</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            width: 30%;
+            margin-right: 5px;
+        }
+    </style>
+    {% load static %} <!-- 加載靜態文件 -->
+</head>
+<body>
+
+    <header>
+        <h1>哲學思辨</h1>
+    </header>
+
+    <section>
+        <h2>古代哲學</h2>
+        <p>古代哲學包括來自世界各地的思想家的洞見，例如古希臘的蘇格拉底、柏拉圖和亞里士多德，以及中國的孔子、老子等。</p>
+        <div class="image-container">
+            <img src="{% static 'socrates.jpg' %}" alt="蘇格拉底" />
+            <img src="{% static 'plato.jpg' %}" alt="柏拉圖" />
+            <img src="{% static 'aristotle.jpg' %}" alt="亞里士多德" />
+        </div>
+    </section>
+
+    <section>
+        <h2>現代哲學</h2>
+        <p>現代哲學探討著當代的問題，包括倫理學、政治哲學、認知科學等領域，並由哲學家如康德、黑格爾、尼采等來加以研究。</p>
+        <div class="image-container">
+            <img src="{% static 'kant.jpg' %}" alt="康德" />
+            <img src="{% static 'hegel.jpg' %}" alt="黑格爾" />
+            <img src="{% static 'nietzsche.jpg' %}" alt="尼采" />
+        </div>
+    </section>
+
+    <section>
+        <h2>東方哲學</h2>
+        <p>東方哲學涵蓋了中國、印度等地的思想傳統，包括佛學、道家、儒家等，這些思想對世界哲學史產生了深遠的影響。</p>
+        <div class="image-container">
+            <img src="{% static 'confucius.jpg' %}" alt="孔子" />
+            <img src="{% static 'buddha.jpg' %}" alt="佛陀" />
+            <img src="{% static 'laozi.jpg' %}" alt="老子" />
+        </div>
+    </section>
+
+</body>
+</html>
